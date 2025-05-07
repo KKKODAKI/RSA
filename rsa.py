@@ -31,7 +31,8 @@ def MinMultiploInverso(r1, r2, t1, t2, totienteDeN):
     # O t2 começa sendo o valor 1
     # E depois t1 recebe o antigo valor de t
 
-    # Com isso eu raperei que poderia ser feito uma funação recursiva, por isso eu retorno a própria função
+    # Com isso eu vi que poderia ser feito uma função recursiva
+    # Por isso eu retorno a chamada da função com esses valores
     return MinMultiploInverso(r2, r, t2, t, totienteDeN)
 
 # Função para tranformar string em ascii
