@@ -22,4 +22,4 @@ if op == 2: # 2 - Decificar
     # Chamo a função para fazer o encode da mensagem
     # Essa função retorna uma lista de inteiros
     mensagem = decode.decode(palavraCodificada)
-    print('mensagem descodificada: ' + mensagem)
+    print('mensagem decodificada: ' + mensagem)
