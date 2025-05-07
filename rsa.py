@@ -1,5 +1,5 @@
 def MinMultiploInverso(r1, r2, t1, t2, totienteDeN):
-    
+
     q = int(r1 / r2) 
 
     r = r1 - q * r2
@@ -30,33 +30,34 @@ def Decode(c, d, n):
 
     return palavra
 
-mensagem = 'morte ao miojo'
-letrasASCII = []
-novasletrasASCII = []
-c = []
+# mensagem = 'morte ao miojo'
+# letrasASCII = []
+# novasletrasASCII = []
+# c = []
 
-StringToASCII(mensagem, letrasASCII)
+# StringToASCII(mensagem, letrasASCII)
 
-for i in range(len(letrasASCII)):
-        print('ASCII ', i, ' - ',letrasASCII[i])
+# for i in range(len(letrasASCII)):
+#         print('ASCII ', i, ' - ',letrasASCII[i])
 
-p = 10**50 # Chave Privada P
-q = 10**51 # Chave Privada Q
-n = p * q # Chave Pública N
+# p = 17 # Chave Privada P
+# q = 23 # Chave Privada Q
+# n = p * q # Chave Pública N
 
-totienteDeN = (p - 1) * (q - 1)
+# totienteDeN = (p - 1) * (q - 1)
 
-e = 3 # Chave Pública E
+# e = 3 # Chave Pública E
 
-d = minMultiploInverso = MinMultiploInverso(totienteDeN, e, 0, 1, totienteDeN) # Chave Privada D
+# d = MinMultiploInverso(totienteDeN, e, 0, 1, totienteDeN) # Chave Privada D
+# print(d)
 
-print('d: ',d)
+# print('d: ',d)
 
-Encode(letrasASCII, c, e, n)
+# Encode(letrasASCII, c, e, n)
 
-for i in range(len(c)):
-        print('ASCII ', i, ' - ',c[i])
+# for i in range(len(c)):
+#         print('ASCII ', i, ' - ',c[i])
 
-decoded = Decode(c, d, n)
+# decoded = Decode(c, d, n)
 
-print(decoded)
+# print(decoded)
