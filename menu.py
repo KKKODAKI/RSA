@@ -4,7 +4,7 @@ import decode
 # Menu de escolha
 print('===================')
 print('1 - Codificar')
-print('2 - Decificar')
+print('2 - Decodificar')
 print('===================')
 op = int(input('Opção: '))
 
@@ -16,7 +16,7 @@ if op == 1: # 1 - Codificar
     palavraCodificada = encode.encode(mensagem)
     print('mensagem codificada: ' + palavraCodificada)
 
-if op == 2: # 2 - Decificar
+if op == 2: # 2 - Decodificar
     palavraCodificada = input('Digite a mensagem para ser decodificada: ')
 
     # Chamo a função para fazer o encode da mensagem
