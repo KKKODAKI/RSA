@@ -10,8 +10,8 @@ def decode(encoded): # Função de encode
         for i in range(len(c)):
                 c[i] = int(c[i])
         
-        p = 3373 # Chave Privada P
-        q = 4969 # Chave Privada Q
+        p = 997 # Chave Privada P
+        q = 991 # Chave Privada Q
         n = p * q # Chave Pública N
 
         totienteDeN = (p - 1) * (q - 1) # Totiente de Euler do número n
