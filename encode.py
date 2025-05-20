@@ -7,8 +7,8 @@ def encode(mensagem): # Função de encode
         letrasASCII = []
         rsa.StringToASCII(mensagem, letrasASCII)
 
-        p = 997 # Chave Privada P
-        q = 991 # Chave Privada Q
+        p = 999999999989 # Chave Privada P
+        q = 999999999959 # Chave Privada Q
         n = p * q # Chave Pública N
         e = 65537 # Chave Pública E
 

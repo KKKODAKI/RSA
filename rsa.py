@@ -41,14 +41,6 @@ def StringToASCII(mensagem, letrasASCII):
     for i in range(len(mensagem)):
         letrasASCII.append(ord(mensagem[i]))
 
-def modPow(base, power, mod):
-    result = 1
-
-    for i in range(power):
-        result = (result * base) % mod
-    
-    return result
-
 # Função encode
 def Encode(letrasASCII, c, e, n):
     # Pego os asciis de cada letra, elevo eles a e, divido por n e pego o resto
@@ -64,7 +56,11 @@ def Decode(c, d, n):
     for i  in range(len(c)):
         print(palavra)
 
-        palavra = palavra + chr(modPow(c[i], d, n))
-        # palavra = palavra + (chr(int((c[i] ** d) % n)))
+        # Passo 3 parâmetros, base, expoente e o mod
+        # Esse pow vai retornar um número inteiro
+        # Transformo esse número inteiro em uma letra
+        # Junto essas letras em uma variável para formar a palavra
+        palavra = palavra + chr(pow(c[i], d, n))
+        
     # Retorno a palavra original
     return palavra
